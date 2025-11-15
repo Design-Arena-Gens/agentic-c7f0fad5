@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  gap: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.heroHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  margin-top: 4rem;
+  max-width: 760px;
+  padding: 0 1.5rem;
+}
+
+.badge {
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(120deg, rgba(88, 119, 255, 0.3), rgba(0, 198, 255, 0.25));
+  border: 1px solid rgba(110, 148, 255, 0.45);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: clamp(2.35rem, 4.2vw, 4rem);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  color: rgba(205, 214, 255, 0.8);
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 0 1.5rem;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(134, 158, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .heroHeader {
+    margin-top: 3rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+  }
+
+  .footerText {
+    font-size: 0.8rem;
+  }
+}
